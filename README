@@ -1,0 +1,30 @@
+What does this debugging library do ?
+
+DebugInterface debug = new DebugOn();
+debug.log("The value of x = " + x);
+debug.messagePlayer(player, "Debug msg here");
+debug = new DebugOff();
+
+As you can see, it adds extra information
+about the state of objects & fields inside your program.
+
+Turn debugging on when you want to inspect 
+certain values and make sure they're within
+an expected range.
+
+No need to delete your debugging messages 
+when you're done debugging:
+
+To turn debugging off:
+debug = new DebugOff();
+
+To turn debugging back on:
+debug = new DebugOn();
+
+To create a debugging object:
+DebugInterface debug = new DebugOn();
+OR
+DebugInterface debug = new DebugOff();
+
+The first example defaults to debugging ON.
+The second example defaults to debugging OFF.
