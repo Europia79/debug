@@ -1,9 +1,14 @@
-What does this debugging library do ?
+Battlecraft Debugging Library
+======
 
+What does this debugging library do ?
+---
+```java
 DebugInterface debug = new DebugOn();
 debug.log("The value of x = " + x);
 debug.messagePlayer(player, "Debug msg here");
 debug = new DebugOff();
+```
 
 As you can see, it adds extra information
 about the state of objects & fields inside your program.
@@ -15,16 +20,32 @@ an expected range.
 No need to delete your debugging messages 
 when you're done debugging:
 
-To turn debugging off:
+```java
+// To turn debugging off:
 debug = new DebugOff();
+```
 
-To turn debugging back on:
+---
+
+```java
+// To turn debugging back on:
 debug = new DebugOn();
+```
 
-To create a debugging object:
+---
+
+```java
+// To create a debugging object:
+// with default ON
 DebugInterface debug = new DebugOn();
-OR
+// OR
+// with default OFF
 DebugInterface debug = new DebugOff();
+```
 
-The first example defaults to debugging ON.
-The second example defaults to debugging OFF.
+Contact:
+======
+
+Nick at Nikolai.Kalashnikov@hotmail.com
+
+[http://www.Battlecraft.co/](http://www.Battlecraft.co/ "Battlecraft")
